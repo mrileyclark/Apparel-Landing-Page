@@ -1,0 +1,102 @@
+/* ## Colors
+
+### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weights: 300, 400, 600 */
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/images/bg-pattern-desktop.svg");
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 2px solid green;
+}
+
+.left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 2px solid blue;
+}
+
+.left .logo {
+  padding-top: 1rem;
+  border: 2px solid gold;
+}
+
+.main-title {
+  color: hsl(0, 36%, 70%);
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  letter-spacing: 1rem;
+}
+
+.secondary-title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 600;
+  word-wrap: break-word;
+  letter-spacing: 1rem;
+}
+
+.left p {
+  max-width: 80%;
+  color: hsl(0, 36%, 70%);
+  font-size: 1rem;
+  line-height: 2.75rem;
+}
+
+.right {
+  width: 40%;
+  height: 100vh;
+  margin: 0;
+}
+
+.right img {
+  height: 100vh;
+}
+
+.btn {
+  width: 50%;
+  padding: 1rem;
+  border-radius: 5rem;
+}

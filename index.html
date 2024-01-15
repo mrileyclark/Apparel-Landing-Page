@@ -11,6 +11,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -26,9 +33,31 @@
     </style>
   </head>
   <body>
-    We're coming soon Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. Email Address
+    <section class="container">
+      <section class="left">
+        <span class="logo"
+          ><img src ="images/logo.svg" alt="company logo""></span
+        >
+
+        <h1 class="main-title">We're</h1>
+        <span class="secondary-title">coming</span>
+        <span class="secondary-title">soon</span>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <button
+          class="btn"
+          type="submit"
+          aria-placeholder="Email Address"
+        ></button>
+      </section>
+
+      <section class="right">
+        <img src="/images/hero-desktop.jpg" alt="hero image" />
+      </section>
+    </section>
 
     <footer>
       <p class="attribution">
