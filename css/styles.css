@@ -44,26 +44,26 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  border: 2px solid green;
 }
 
 .left {
   width: 60%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   height: 100vh;
-  border: 2px solid blue;
+  padding: 0 10rem 8rem;
 }
 
 .left .logo {
-  padding-top: 1rem;
-  border: 2px solid gold;
+  margin-bottom: 2rem;
 }
 
 .main-title {
   color: hsl(0, 36%, 70%);
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 300;
   margin-bottom: 0;
   letter-spacing: 1rem;
@@ -72,7 +72,7 @@ body {
 .secondary-title {
   color: black;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
   word-wrap: break-word;
   letter-spacing: 1rem;
@@ -82,7 +82,7 @@ body {
   max-width: 80%;
   color: hsl(0, 36%, 70%);
   font-size: 1rem;
-  line-height: 2.75rem;
+  line-height: 2rem;
 }
 
 .right {
@@ -96,7 +96,13 @@ body {
 }
 
 .btn {
-  width: 50%;
-  padding: 1rem;
+  width: 500px;
+  padding: 1.5rem;
   border-radius: 5rem;
+  border-color: hsl(0, 36%, 70%);
+  margin-top: 1.5rem;
+}
+
+.btn::placeholder {
+  color: hsl(0, 36%, 70%);
 }
