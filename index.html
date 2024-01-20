@@ -47,9 +47,36 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form>
+
+        <!-- <form>
           <input type="email" placeholder="Email Address" class="btn" />
-        </form>
+        </form> -->
+
+        <div class="form-container">
+          <form>
+            <input
+              type="email"
+              class="email-box"
+              aria-labelledby="email address"
+              placeholder="Email Address"
+            />
+            <button type="submit" aria-labelledby="submit">
+              <img
+                src="https://res.cloudinary.com/dxayftnxb/image/upload/v1579716162/icon-arrow_wa4enq.svg"
+                alt="right arrow submit icon"
+              />
+            </button>
+            <div class="email-error-icon hidden">
+              <img
+                src="https://res.cloudinary.com/dxayftnxb/image/upload/v1579716162/icon-error_oysxsp.svg"
+                alt="error icon for invalid email address"
+              />
+            </div>
+          </form>
+          <div class="email-error-text hidden">
+            <p>Please provide a valid email</p>
+          </div>
+        </div>
       </section>
 
       <section class="right">
